@@ -17,6 +17,8 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       self.view.backgroundColor = UIColor.red
+        
         self.title = "My Favorite Restaurants in Aiea"
         
         titleLabel.text = restaurants[myIndex]
