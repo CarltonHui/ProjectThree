@@ -8,41 +8,30 @@
 
 import UIKit
 
+var restaurants = ["Jamba Juice", "Pizza Hut", "Royal Palace", "Stadium Pho", "Subway","Taco Bell"]
+var restaurantDesc = ["Juice Shop","Pizza Shop","Chinese Food","Vietnamese Food","Sandwich Shop","Taco Shop"]
+var myIndex = 0
 
-
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-let myFriendsArray = ["Jamba Juice", "Pizza Hut", "Royal Palace", "Stadium Pho", "Subway","Taco Bell"]
-    
-    @IBOutlet var tableView: UITableView!
+class ViewController: UIViewController {
     
     override func viewDidLoad() {
-        self.tableView.dataSource = self
         super.viewDidLoad()
         
-        self.title = "Stadium Eats"
+        self.title = "Aiea Eats"
+    
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return restaurants.count
+    }
         
-    }
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
+            UITableViewCell {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+                cell.textLabel?.text = restaurants[indexPath.row]
+                return cell
+        }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-      
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myFriendsArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
-        UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
-            let text = myFriendsArray[indexPath.row]
-            cell.textLabel?.text = text
-            return cell
-            
-    }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+}
+myIndex = indexPath.row
+    performSegue(withIdentifier: "segue", sender: self)
 }
