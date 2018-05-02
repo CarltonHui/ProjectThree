@@ -9,7 +9,7 @@
 import UIKit
 
 var restaurants = ["Jamba Juice","Pizza Hut","Royal Palace","Stadium Pho","Subway","Taco Bell"]
-var restaurantDesc = ["Juice Shop","Pizza Shop","Chinese Food","Vietnamese Food","Sandwich Shop","Taco Shop"]
+var restaurantDesc = ["Jamba Juice is a Juice Shop which primarily sells smoothies.","Pizza Hut is a chain Pizza Shop which is well known for their delivery service.","Royal Palace is a chinese food restaurant.","Stadium Pho is a vietnamese food restaurant.","Subway is a sandwich shop which is well known for their focus on customer options.","Taco Bell is a taco shop which is well known for their fast and cheap American style Mexican food."]
 var myIndex = 0
 
 class TableViewController: UITableViewController {

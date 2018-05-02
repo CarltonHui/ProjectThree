@@ -17,6 +17,8 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "My Favorite Restaurants in Aiea"
+        
         titleLabel.text = restaurants[myIndex]
         descLabel.text = restaurantDesc[myIndex]
         myImageView.image = UIImage(named: restaurants[myIndex] + ".jpg")

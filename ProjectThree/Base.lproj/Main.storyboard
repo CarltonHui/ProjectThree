@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Eatery Locations-->
+        <!--View Controller Two-->
         <scene sceneID="pm5-5v-ZMp">
             <objects>
                 <viewController id="ObZ-KU-mAa" customClass="ViewControllerTwo" customModule="ProjectThree" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +26,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Q7a-5t-vd3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Eatery Locations" id="MIn-mW-59g"/>
+                    <navigationItem key="navigationItem" id="MIn-mW-59g"/>
                     <connections>
                         <outlet property="mapView" destination="AAU-zt-X2n" id="SR7-x8-1pr"/>
                     </connections>
@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="538" y="91"/>
         </scene>
-        <!--Aiea Eats-->
+        <!--My Favorite Restaurants in Aiea-->
         <scene sceneID="Ns7-6F-fYi">
             <objects>
                 <viewController id="ZIA-AE-rkj" customClass="ViewController2" customModule="ProjectThree" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,7 +97,7 @@
                                 <rect key="frame" x="0.0" y="113" width="320" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHE-ck-gz4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHE-ck-gz4">
                                 <rect key="frame" x="0.0" y="328" width="320" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -123,7 +123,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DCE-nf-vTM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Aiea Eats" id="WNk-YG-8Tp"/>
+                    <navigationItem key="navigationItem" title="My Favorite Restaurants in Aiea" id="WNk-YG-8Tp"/>
                     <connections>
                         <outlet property="descLabel" destination="lHE-ck-gz4" id="PCY-Ha-hjn"/>
                         <outlet property="myImageView" destination="dwp-JO-N9U" id="F3E-TC-Nlo"/>
